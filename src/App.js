@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { Component } from "react";
 import './App.css';
 import Character from './components/Character';
 import Score from './components/Score';
 import MickeyArray from './MickeyArray.json';
 
 const clickedArray =[]
-class App extends React.Component {
+class App extends Component {
   state={
     MickeyArray,
     topScore: 0,
     score: 0
   }
 
-  shuffle = () =>{
+  shuffle = () => {
     let newOrder = this.state.MickeyArray
     for (let i = newOrder.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
