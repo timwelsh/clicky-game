@@ -1,0 +1,11 @@
+.charImage{
+    height:220px;
+    width:220px;
+    margin:10px;
+    float:left;
+    border:solid 1px gray;
+    transition: all .2s ease-in-out;
+    }
+.charImage:hover { 
+    transform: scale(1.06); 
+}
